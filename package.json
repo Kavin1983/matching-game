@@ -1,0 +1,14 @@
+{
+  "name": "matchinggame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scipt.js",
+  "scripts": {
+    "compilesass": "node-sass main.scss style.css -w"
+  },
+  "author": "Kavin Yedlapalli",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.0"
+  }
+}

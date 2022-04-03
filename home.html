@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matching Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Matching game</h1>
+    </header>
+    <div class="content">
+    <div class="settings-board">
+      <span class="correct-num">correct: 0 / 18</span>
+      <div>
+        <span class="lives">Lives: 40</span>
+        <div class="lives__btns">
+          <button class="lives__btn lives__btn--up">&uparrow;</button>
+          <button class="lives__btn lives__btn--down">&downarrow;</button>
+        </div>
+
+      </div>
+      <!-- <div class="settings">
+        <div class="settings__number">36</div>
+        <button class="settings__btn settings__btn--up">&uparrow;</button>
+        <button class="settings__btn settings__btn--down">&downarrow;</button>
+      </div> -->
+      <button class="reset btn btn--reset">Start</button>
+
+    </div>
+    <main class="main">
+      <div class="board">
+        <div class="board__row">
+          <div class="board__box">
+
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="board__row">
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="board__row">
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="board__row">
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="board__row">
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="board__row">
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+
+          <div class="board__box">
+            <div class="board__side top">
+              <img src="questionmark.png" alt=" " class="board__image" />
+            </div>
+
+            <div class="board__side">
+              <div class="board__value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+    <script src="scipt.js"></script>
+  </body>
+</html>
